@@ -1,0 +1,50 @@
+body{
+    margin: 5px;
+}
+
+.main-img{
+    display: flex;
+    justify-content: center;
+}
+
+.main-button{
+    display: flex;
+    justify-content: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container{
+    height:250px ;
+    width: 400px;
+    background-color: #C3B1E1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container{
+    height:50px ;
+    width: 150px;
+    margin-top: 2.5px;
+}
+
+/*BUTTOn hover effect*/
+.generator:hover{
+    cursor: pointer;
+    color: purple;
+    letter-spacing: 0.6px;
+}
+
+/*image properties*/
+
+.image-itself{
+    height: 200px;
+    width: 350px;
+    border-radius: 5px;
+}
