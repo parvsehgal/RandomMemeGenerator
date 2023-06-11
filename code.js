@@ -13,6 +13,6 @@ async function generateMeme() {
     let data = await response.json();
     changeImg(data.url);
 }
-
+setTimeout(generateMeme, 1);
 memeButton.addEventListener('click', generateMeme);
 
