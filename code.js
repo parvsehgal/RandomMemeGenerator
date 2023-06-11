@@ -1,9 +1,18 @@
+// async await implementation
 
-const ar = ["line.jpg", "money.png", "pen.jpeg", "bob.png", "python.jpeg"];
+let image = document.querySelector('img');
+let memeButton = document.querySelector('button');
 
-function show_meme() {
-    let randomnumber = Math.floor(Math.random() * 5);
-    let ourimg = document.querySelector(".image-itself");
-    ourimg.src = ar[randomnumber];
-    console.log(ar[randomnumber]);
+function changeImg(value) {
+    image.src = value;
 }
+
+async function generateMeme() {
+    const apiLink = 'https://meme-api.com/gimme';
+    let response = await fetch(apiLink);
+    let data = await response.json();
+    changeImg(data.url);
+}
+
+memeButton.addEventListener('click', generateMeme);
+
