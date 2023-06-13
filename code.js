@@ -14,12 +14,10 @@ async function generateMeme() {
     changeImg(data.url);
 }
 setTimeout(generateMeme, 1);
-//memeButton.addEventListener('click', generateMeme);
-
+memeButton.addEventListener('click', generateMeme);
 
 
 // .then implementation
-
 /*
 let image = document.querySelector('img');
 let memeButton = document.querySelector('button');
