@@ -14,5 +14,25 @@ async function generateMeme() {
     changeImg(data.url);
 }
 setTimeout(generateMeme, 1);
-memeButton.addEventListener('click', generateMeme);
+//memeButton.addEventListener('click', generateMeme);
 
+
+
+// .then implementation
+
+/*
+let image = document.querySelector('img');
+let memeButton = document.querySelector('button');
+
+function changeImg(value) {
+    image.src = value;
+}
+
+function generateMeme() {
+    const apiLink = 'https://meme-api.com/gimme';
+    fetch(apiLink).then((res) => res.json()).then((data) => changeImg(data.url));
+}
+
+setTimeout(generateMeme, 1);
+memeButton.addEventListener('click', generateMeme);
+*/
