@@ -1,50 +1,62 @@
-body{
+body {
     margin: 5px;
 }
 
-.main-img{
+.main-img {
     display: flex;
     justify-content: center;
 }
 
-.main-button{
+.main-button {
+
     display: flex;
+    position: fixed;
+    top: 87%;
+    right: 45%;
     justify-content: center;
+
+
 }
 
-.button-container{
+
+
+.image-container {
+    margin: 4vh auto;
+    height: 90vh;
+    width: 85vw;
+    background-color: #15191c;
+    border-radius: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    flex-direction: column;
     align-items: center;
 }
 
-.image-container{
-    height:250px ;
-    width: 400px;
-    background-color: #C3B1E1;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button-container{
-    height:50px ;
+.button-container {
+    height: 50px;
     width: 150px;
     margin-top: 2.5px;
 }
 
-/*BUTTOn hover effect*/
-.generator:hover{
+.generator {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
     cursor: pointer;
-    color: purple;
-    letter-spacing: 0.6px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
-/*image properties*/
+.generator:hover {
+    background-color: #a9a8a8;
+}
 
-.image-itself{
-    height: 200px;
-    width: 350px;
+.image-itself {
+    margin-top: 50px;
+    height: 75vh;
+
+    width: 65vw;
     border-radius: 5px;
 }
